@@ -58,7 +58,7 @@ export default function Landing() {
             Creative Studio
           </h1>
           
-          <h2 className={`text-[clamp(24px,3vw,48px)] font-light tracking-tight leading-[1.2] transition-colors duration-700 ease-in-out ${
+          <h2 className={`text-[clamp(60px,6vw,90px)] font-bold tracking-tight leading-[1.1] transition-colors duration-700 ease-in-out ${
             isDark ? 'text-[#f5f5f5]' : 'text-[#1a1a1a]'
           }`}>
             We craft digital{' '}
@@ -66,7 +66,7 @@ export default function Landing() {
               onClick={toggleTheme}
               className="inline-block relative hover:opacity-70 transition-opacity duration-300 cursor-pointer align-baseline"
               aria-label="Toggle dark mode"
-              style={{ width: 'clamp(140px, 10vw, 200px)' }}
+              style={{ width: 'clamp(240px, 16vw, 360px)' }}
             >
               <span className="relative inline-block w-full text-center">
                 <span className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
@@ -136,6 +136,7 @@ export default function Landing() {
     </div>
   );
 }
+
 
 
 
