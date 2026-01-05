@@ -52,13 +52,7 @@ export default function Landing() {
       {/* Main Content */}
       <main className="relative z-10 h-full flex flex-col items-center justify-center px-8">
         <div className="max-w-5xl mx-auto text-center space-y-8">
-          <h1 className={`text-[clamp(48px,8vw,120px)] font-bold tracking-tight leading-[0.9] transition-colors duration-700 ease-in-out ${
-            isDark ? 'text-[#f5f5f5]' : 'text-[#1a1a1a]'
-          }`}>
-            Creative Studio
-          </h1>
-          
-          <h2 className={`text-[clamp(60px,6vw,90px)] font-bold tracking-tight leading-[1.1] transition-colors duration-700 ease-in-out ${
+          <h1 className={`text-[clamp(60px,8vw,120px)] font-bold tracking-tight leading-[1.1] transition-colors duration-700 ease-in-out ${
             isDark ? 'text-[#f5f5f5]' : 'text-[#1a1a1a]'
           }`}>
             We craft digital{' '}
@@ -66,7 +60,7 @@ export default function Landing() {
               onClick={toggleTheme}
               className="inline-block relative hover:opacity-70 transition-opacity duration-300 cursor-pointer align-baseline"
               aria-label="Toggle dark mode"
-              style={{ width: 'clamp(240px, 16vw, 360px)' }}
+              style={{ width: 'clamp(280px, 18vw, 420px)' }}
             >
               <span className="relative inline-block w-full text-center">
                 <span className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
@@ -90,7 +84,7 @@ export default function Landing() {
                 <span className="invisible">[experiences]</span>
               </span>
             </button>
-          </h2>
+          </h1>
           
           <p className={`text-[clamp(18px,2vw,24px)] font-light max-w-2xl mx-auto transition-colors duration-700 ease-in-out ${
             isDark ? 'text-[#f5f5f5]/80' : 'text-[#1a1a1a]/70'
@@ -136,6 +130,7 @@ export default function Landing() {
     </div>
   );
 }
+
 
 
 
