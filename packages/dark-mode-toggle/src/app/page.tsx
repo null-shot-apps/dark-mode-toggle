@@ -58,27 +58,31 @@ export default function Landing() {
             We craft digital{' '}
             <button
               onClick={toggleTheme}
-              className="inline-flex items-center gap-2 hover:opacity-70 transition-opacity duration-300 cursor-pointer"
+              className="inline-block relative hover:opacity-70 transition-opacity duration-300 cursor-pointer align-baseline"
               aria-label="Toggle dark mode"
+              style={{ width: 'clamp(280px, 20vw, 400px)' }}
             >
-              <span className={`transition-colors duration-700 ease-in-out ${
-                isDark ? 'text-[#f5f5f5]/40' : 'text-[#1a1a1a]/40'
-              }`}>[</span>
-              <span className="relative inline-block">
-                <span className={`transition-all duration-500 ease-in-out ${
-                  isDark ? 'opacity-0 absolute inset-0' : 'opacity-100'
+              <span className="relative inline-block w-full text-center">
+                <span className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
+                  isDark ? 'opacity-0' : 'opacity-100'
                 }`}>
-                  experiences
+                  <span className={`transition-colors duration-700 ease-in-out ${
+                    isDark ? 'text-[#f5f5f5]/40' : 'text-[#1a1a1a]/40'
+                  }`}>[</span>experiences<span className={`transition-colors duration-700 ease-in-out ${
+                    isDark ? 'text-[#f5f5f5]/40' : 'text-[#1a1a1a]/40'
+                  }`}>]</span>
                 </span>
-                <span className={`transition-all duration-500 ease-in-out ${
-                  isDark ? 'opacity-100' : 'opacity-0 absolute inset-0'
+                <span className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
+                  isDark ? 'opacity-100' : 'opacity-0'
                 }`}>
-                  moods
+                  <span className={`transition-colors duration-700 ease-in-out ${
+                    isDark ? 'text-[#f5f5f5]/40' : 'text-[#1a1a1a]/40'
+                  }`}>[</span>moods<span className={`transition-colors duration-700 ease-in-out ${
+                    isDark ? 'text-[#f5f5f5]/40' : 'text-[#1a1a1a]/40'
+                  }`}>]</span>
                 </span>
+                <span className="invisible">[experiences]</span>
               </span>
-              <span className={`transition-colors duration-700 ease-in-out ${
-                isDark ? 'text-[#f5f5f5]/40' : 'text-[#1a1a1a]/40'
-              }`}>]</span>
             </button>
           </h1>
           
@@ -126,6 +130,7 @@ export default function Landing() {
     </div>
   );
 }
+
 
 
 
