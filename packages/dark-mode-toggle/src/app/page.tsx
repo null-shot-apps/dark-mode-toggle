@@ -52,13 +52,13 @@ export default function Landing() {
       {/* Main Content */}
       <main className="relative z-10 h-full flex flex-col items-center justify-center px-8">
         <div className="max-w-5xl mx-auto text-center space-y-8">
-          <h1 className={`text-[clamp(60px,8vw,120px)] font-bold tracking-tight leading-[1.1] transition-colors duration-700 ease-in-out ${
+          <h1 className={`text-[clamp(60px,8vw,120px)] font-bold tracking-tight leading-[1.2] transition-colors duration-700 ease-in-out ${
             isDark ? 'text-[#f5f5f5]' : 'text-[#1a1a1a]'
           }`}>
-            We craft digital{' '}
+            <div>We craft digital</div>
             <button
               onClick={toggleTheme}
-              className="inline-block relative hover:opacity-70 transition-opacity duration-300 cursor-pointer align-baseline"
+              className="inline-block relative hover:opacity-70 transition-opacity duration-300 cursor-pointer mt-2"
               aria-label="Toggle dark mode"
               style={{ width: 'clamp(280px, 18vw, 420px)' }}
             >
@@ -130,6 +130,7 @@ export default function Landing() {
     </div>
   );
 }
+
 
 
 
